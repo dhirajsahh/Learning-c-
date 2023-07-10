@@ -2,17 +2,33 @@
 using namespace std;
 class test
 {
-    char fname[20], lname[20];
-    char fullname[40];
+    int a;
+    int sum;
 
 public:
-    void getname()
+    void input()
     {
-        cout << "Enter the first name and lastname" << endl;
-        cin >> fname >> lname;
+        cout << "Enter the value of a";
+        cin >> a;
     }
-    test operator+(test t1)
+    friend test operator+(test, test);
+
+    void display()
     {
-        test temp;
-        }
+        cout << "the vlaue of sum is" << sum;
+    }
 };
+test operator+(test t1, test t2)
+{
+    test t3;
+    t3.sum = t1.a + t2.a;
+    return t3;
+}
+int main()
+{
+    test t1, t2, t3;
+    t1.input();
+    t2.input();
+    t3 = t1 + t2;
+    t3.display();
+}
