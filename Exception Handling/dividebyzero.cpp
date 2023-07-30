@@ -8,14 +8,15 @@ int main()
     a = x - y;
     try
     {
-        if (a!=0)
+        if (a==0)
+        {
+        	throw a;  
+          }
+        else
         {
           float z = ((x + y)/a);
             cout << "the result of dividing sum of x and y by their difference  is" << z << endl;  
-        }
-        else
-        {
-          throw a;  
+        
         }
     }
     catch (float a1)
