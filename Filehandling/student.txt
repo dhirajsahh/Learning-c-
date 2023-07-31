@@ -1,2 +1,3 @@
-The details of student are
-name :Dhiraj id : 11 adress :siraha
+Dhiraj
+Siraha
+11
