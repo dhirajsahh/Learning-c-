@@ -1,7 +1,10 @@
-cout << "Enter the name faculty and id of a student " << endl;
-    // cin >> name >> faculty >> id;
-    // ofstream outf("student.dat");
-    // outf.write((char *)(&name), sizeof(name));
-    // outf.write((char *)(&faculty), sizeof(faculty));
-    // outf.write((char *)(&id), sizeof(id));
-    // outf.close();
+ofstream data("student.txt");
+    // for (i = 0; i < 5; i++)
+    // {
+    //     cout << "Enter the name adress and id" << endl;
+    //     cin >> name >> adress >> id;
+    //     data << name << endl
+    //          << adress << endl
+    //          << id << endl;
+    // }
+    // data.close();
