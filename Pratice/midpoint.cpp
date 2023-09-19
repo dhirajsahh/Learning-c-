@@ -19,7 +19,6 @@ public:
     }
     midpoint calculate(midpoint m1, midpoint m2)
     {
-        midpoint temp;
         x = (m1.x + m2.x) / 2;
         y = (m1.y + m2.y) / 2;
         return *this;
